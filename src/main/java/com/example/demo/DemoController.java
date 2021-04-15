@@ -15,13 +15,13 @@ public class DemoController {
 @Autowired
 DemoService demoService;
 
-    @GetMapping(value = "/demo")
+    @GetMapping(value = "/hello")
     public ResponseEntity<String> getHello() {
         String value = demoService.getHello();
         return new ResponseEntity<>(value, HttpStatus.OK);
     }
 
-    @GetMapping(value = "/demo2")
+    @GetMapping(value = "/bonjour")
     public ResponseEntity<String> getBonjour() {
 
         String value = demoService.getBonjour();
